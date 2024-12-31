@@ -1,4 +1,4 @@
-import { Calendar } from "./components/calender";
+import { CalendarPage } from "./components/Calender.tsx";
 import { CalendarProvider } from "./context/CalenderContext";
 
 function App() {
@@ -6,7 +6,7 @@ function App() {
     <>
       <CalendarProvider>
         <div className="max-w-6xl mx-auto min-h-screen bg-background">
-          <Calendar />
+          <CalendarPage />
         </div>
       </CalendarProvider>
     </>

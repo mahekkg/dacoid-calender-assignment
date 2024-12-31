@@ -1,5 +1,3 @@
-"use client";
-
 import React, { useState } from "react";
 import { CalendarGrid } from "./CalenderGrid";
 import { EventModal } from "./EventModal";
@@ -7,7 +5,7 @@ import { Event } from "../types/calendar";
 import { useCalendar } from "../context/CalenderContext";
 import { EventList } from "./EventList";
 
-export const Calendar: React.FC = () => {
+export const CalendarPage: React.FC = () => {
   const { selectedDate, setSelectedDate } = useCalendar();
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [selectedEvent, setSelectedEvent] = useState<Event | undefined>(
